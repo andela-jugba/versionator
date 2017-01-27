@@ -43,7 +43,7 @@ module Versionator
       current_branch = git_current_branch
       if current_branch == 'master' || confirm_branch(current_branch)
         output = git_checkout(current_branch)
-        output += git_pull(current_branch)
+#         output += git_pull(current_branch)
         output += git_tag
         output += git_commit
         output += git_push(current_branch)
